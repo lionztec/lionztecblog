@@ -8,7 +8,7 @@ So&ntilde;ador, adicto tecnol&oacute;gico y humilde bloguero.
 
 ### M&aacute;s Informaci&oacute;n
 
-A place to include any other types of information that you'd like to include about yourself.
+En construcci&oacute;n.
 
 ### Contacta conmigo
 
