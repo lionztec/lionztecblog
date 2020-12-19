@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Acerca
-permalink: /acerca/
+permalink: /acerca
 ---
 
 So&ntilde;ador, adicto tecnol&oacute;gico y humilde bloguero.
