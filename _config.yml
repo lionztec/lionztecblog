@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: LiOnz Tec
+name: LiOnzTec
 
 # Short bio or description (displayed in the header)
 description: Tecnología en formato personal
@@ -21,11 +21,11 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: lionztec/
+  github: lionztec
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: http://lionztec.github.io/ # just type anything here for a working RSS icon
   twitter: lionz
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
@@ -41,7 +41,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://lionztec.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
