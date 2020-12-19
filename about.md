@@ -12,4 +12,4 @@ En construcci&oacute;n.
 
 ### Contacta conmigo
 
-[email@domain.com](mailto:email@domain.com)
+[lionz@domain.com](mailto:lionz@domain.com)
