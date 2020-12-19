@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: Acerca
 permalink: /about/
 ---
 
-Some information about you!
+So&ntilde;ador, adicto tecnol&oacute;gico y humilde bloguero.
 
-### More Information
+### M&aacute;s Informaci&oacute;n
 
 A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
+### Contacta conmigo
 
 [email@domain.com](mailto:email@domain.com)
