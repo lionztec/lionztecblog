@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+<br />
+<br />
+  <div style="text-align: center; margin-top: 10px; margin-bottom: 25px;">
+  {% if page.previous %}
+  <a class="button" style="font-size: 12px;" title="Artículo anterior" href="{{  site.baseurl }}{{  page.previous.url }}"><span class="fas fa-chevron-circle-left"></span>&nbsp;Anterior</a>
+  {% endif %}
+  {% if page.next %}
+  &nbsp;&nbsp;&nbsp;&nbsp;<a class="button" style="font-size: 12px;" title="Artículo posterior" href="{{  site.baseurl }}{{  page.next.url }}"><span class="fas fa-chevron-circle-right"></span>&nbsp;Posterior</a>
+  {% endif %}
+  </div>
+<br />
+  <div class="date">
+    Escrito el
+          {{  page.date | date: '%-d' }} de
+            {% assign m = page.date | date: '%-m' %}
+            {% case m %}
+              {% when '1' %}enero
+                {% when '2' %}febrero
+                {% when '3' %}marzo
+                {% when '4' %}abril
+                {% when '5' %}mayo
+                {% when '6' %}junio
+                {% when '7' %}julio
+                {% when '8' %}agosto
+                {% when '9' %}septiembre
+                {% when '10' %}octubre
+                {% when '11' %}noviembre
+                {% when '12' %}diciembre
+            {% endcase %}
+            de
+            {{  page.date | date: '%Y' }}
+
+    <div style="margin-top: 25px;">
+    <div class="post-categories">
+         {% if post %}
+            {% assign categories = post.categories %}
+         {% else %}
+            {% assign categories = page.categories %}
+         {% endif %}
+    Archivado en:
+         {% for category in categories %}
+            <a href="{{site.baseurl}}/categories/{{category|slugize}}">{{category}}</a>
+         {% unless forloop.last %}&nbsp;{% endunless %}
+         {% endfor %}
+    </div>
+    </div>
+  </div>
+<br />
+<br />
+  <hr />
+  <div style="text-align: center; margin-top: 20px;">
+  Puedes consultar otras entradas en el <a href="{{  site.baseurl }}/archive">archivo del sitio</a>.
+  </div>
+  {% include disqus.html %}
+</article>
