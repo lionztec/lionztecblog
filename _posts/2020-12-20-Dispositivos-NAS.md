@@ -3,7 +3,7 @@ layout: post
 title: Dispositivos NAS
 author: lionz
 image: /images/nas214.jpg
-categories: Tecnologia
+categories: Tecnología
 published: true
 ---
 
