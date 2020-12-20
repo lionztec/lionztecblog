@@ -22,7 +22,7 @@ published: true
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" style="font-size: 12px;" title="Ir a la página anterior" class="fas fa-chevron-circle-left">P&aacute;gina anterior</a>
   {% endif %}
-  <span class="page_number ">
+  <span class="page_number " style="font-size: 12px;">
     &nbsp;&nbsp;&nbsp;&nbsp;Página {{ paginator.page }} de {{ paginator.total_pages }}
   </span>
   {% if paginator.next_page %}
