@@ -20,7 +20,7 @@ layout: default
   </div>
 <br />
   <div class="date">
-    Escrito el
+    Por {{ page.author }} el
           {{  page.date | date: '%-d' }} de
             {% assign m = page.date | date: '%-m' %}
             {% case m %}
