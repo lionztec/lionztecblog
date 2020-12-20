@@ -1,7 +1,7 @@
 ---
 layout: post
 title: You're up and running!
-author: lionz
+author: Jekyll
 categories: lionztec
 ---
 
