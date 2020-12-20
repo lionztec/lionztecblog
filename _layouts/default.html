@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     {% include meta.html %}
 
@@ -42,6 +44,7 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
+          <h4><a href="{{ site.baseurl }}/archive/">Archivo</a> | Temas: <a href="{{ site.baseurl }}/categories/lionztec">LiOnzTec</a> - <a href="{{ site.baseurl }}/categories/tecnologia">Tecnolog&iacute;a</a></h4>
           {% include svg-icons.html %}
         </footer>
       </div>
