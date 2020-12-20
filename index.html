@@ -1,18 +1,31 @@
 ---
 layout: default
+published: true
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <article class="post">
+  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+   <div class="entry">
         {{ post.excerpt }}
-      </div>
+   </div>
+   <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer M&aacute;s</a>
+  </article>
+{% endfor %}
+</div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Leer M&aacute;s</a>
-    </article>
-  {% endfor %}
+<!-- Pagination links -->
+
+<div style="text-align: center; margin-top: 30px; margin-bottom: 25px;">
+  {% if paginator.previous_page %}
+    <a class="button" style="font-size: 12px;" title="Ir a la página anterior" href="{{ paginator.previous_page_path }}"><span class="fas fa-chevron-circle-left"></span>&nbsp;P&aacute;gina anterior</a>
+  {% endif %}
+  <span class="page_number ">
+    &nbsp;&nbsp;&nbsp;&nbsp;Página {{ paginator.page }} de {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    &nbsp;&nbsp;&nbsp;&nbsp;<a class="button" style="font-size: 12px;" title="Ir a la página siguiente" href="{{ paginator.next_page_path }}"><span class="fas fa-chevron-circle-right"></span>&nbsp;P&aacute;gina siguiente</a>
+  {% endif %}
 </div>
